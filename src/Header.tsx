@@ -1,4 +1,4 @@
-import './App.css';
+import './Main.css';
 import logo_solarisdesign from './img/logo_solarisdesign.svg'
 
 function Header() {
