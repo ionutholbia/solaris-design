@@ -4,8 +4,8 @@ import mk_dens25 from "./img/centrale/pachet_2/mk_dens25.png";
 import ariston_alteas_one_main from "./img/centrale/pachet_3/ariston_alteas_one_main.png";
 import trustLogo from "./img/parteneri/trust.png";
 import total_gaz from "./img/parteneri/total-gaz.png";
-import motanLogo from "./img/parteneri/motan.png"
-import solaris_design_iasi_2 from "./img/portofoliu/all season/solaris_design_iasi_2.jpg"
+import motanLogo from "./img/parteneri/motan.png";
+import solaris_design_iasi_2 from "./img/portofoliu/all season/solaris_design_iasi_2.jpg";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -192,11 +192,7 @@ function App() {
                   <img src={trustLogo} alt="Trust" className="img-fluid" />
                 </p>
                 <p>
-                  <img
-                    src={motanLogo}
-                    alt="Motan"
-                    className="img-fluid"
-                  />
+                  <img src={motanLogo} alt="Motan" className="img-fluid" />
                 </p>
               </div>
             </div>
