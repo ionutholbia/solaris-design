@@ -5,16 +5,12 @@ import Footer from "./Footer";
 import Acasa from "./Acasa";
 import Portofoliu from "./Portofoliu";
 import { Component } from "react";
-
-export enum AppComponents {
-  AcasaPage = "Acasa",
-  PortofoliuPage = "Portofoliu",
-}
+import { AppComponentsNames } from "./Types";
 
 interface IAppProps {}
 
 interface IAppState {
-  currentComponentName: AppComponents;
+  currentComponentName: AppComponentsNames;
 }
 class App extends Component<IAppProps, IAppState> {
   private readonly components = {
@@ -26,14 +22,20 @@ class App extends Component<IAppProps, IAppState> {
     super(props);
 
     this.state = {
-      currentComponentName: AppComponents.PortofoliuPage,
+      currentComponentName: AppComponentsNames.AcasaPage,
     };
+
+    this.onPageSwitched = this.onPageSwitched.bind(this)
+  }
+
+  onPageSwitched(newComponentName: AppComponentsNames) {
+    this.setState({ currentComponentName: newComponentName });
   }
 
   render() {
     return (
       <body>
-        <Header />
+        <Header onPageSwitched={this.onPageSwitched} />
         {this.components[this.state.currentComponentName]}
         <Footer />
       </body>

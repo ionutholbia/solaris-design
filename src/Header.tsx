@@ -1,7 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import './Main.css';
 import logo_solarisdesign from './img/logo_solarisdesign.svg'
+import { AppComponentsNames } from "./Types";
 
-function Header() {
+export type HeaderProps = Readonly<{ onPageSwitched: (componentName: AppComponentsNames) => void }>
+
+function Header(props: HeaderProps) {
     return (
         <header className="header">
             <div className="container">
@@ -15,11 +19,11 @@ function Header() {
                 </div>
                 <div className="main-menu">
                     <nav>
-                        <a href="index.php">Acasa</a>
+                        <a href="#" onClick={()=> props.onPageSwitched(AppComponentsNames.AcasaPage)}>Acasa</a>
                         <a href="revizie_centrala_termica.php">Revizie CT</a>
                         <a href="revizie_aer_conditionat.php">Revizie AC</a>
                         <a href="inlocuire_centrala.php">Inlocuire centrala</a>
-                        <a href="portofoliu.php">Portofoliu</a>
+                        <a href="#" onClick={()=> props.onPageSwitched(AppComponentsNames.PortofoliuPage)}>Portofoliu</a>
                     </nav>
                 </div>
             </div>
