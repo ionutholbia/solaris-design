@@ -1,3 +1,4 @@
+import "./Main.css";
 import mk_plus24_1 from "./img/centrale/pachet_1/mk_plus24_1.png";
 import mk_dens25 from "./img/centrale/pachet_2/mk_dens25.png";
 import ariston_alteas_one_main from "./img/centrale/pachet_3/ariston_alteas_one_main.png";

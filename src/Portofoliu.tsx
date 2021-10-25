@@ -1,3 +1,4 @@
+import "./Main.css";
 import solaris_design_iasi_1 from "./img/portofoliu/all season/solaris_design_iasi_1.jpg";
 import solaris_design_iasi_2 from "./img/portofoliu/all season/solaris_design_iasi_2.jpg";
 import solaris_design_iasi_4 from "./img/portofoliu/all season/solaris_design_iasi_4.jpg";

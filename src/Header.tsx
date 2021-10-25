@@ -20,9 +20,9 @@ function Header(props: HeaderProps) {
                 <div className="main-menu">
                     <nav>
                         <a href="#" onClick={()=> props.onPageSwitched(AppComponentsNames.AcasaPage)}>Acasa</a>
-                        <a href="revizie_centrala_termica.php">Revizie CT</a>
-                        <a href="revizie_aer_conditionat.php">Revizie AC</a>
-                        <a href="inlocuire_centrala.php">Inlocuire centrala</a>
+                        <a href="#" onClick={()=> props.onPageSwitched(AppComponentsNames.RevizieCT)}>Revizie CT</a>
+                        <a href="#" onClick={()=> props.onPageSwitched(AppComponentsNames.RevizieAC)}>Revizie AC</a>
+                        <a href="#" onClick={()=> props.onPageSwitched(AppComponentsNames.InlocuireCT)}>Inlocuire centrala</a>
                         <a href="#" onClick={()=> props.onPageSwitched(AppComponentsNames.PortofoliuPage)}>Portofoliu</a>
                     </nav>
                 </div>
