@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import './Main.css';
 import logo_solarisdesign from './img/logo_solarisdesign.svg'
-import { AppComponentsNames } from "./Types";
+import { AppComponentsNames } from "../Types";
 
 export type HeaderProps = Readonly<{ onPageSwitched: (componentName: AppComponentsNames) => void }>
 

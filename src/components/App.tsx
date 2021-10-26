@@ -3,7 +3,7 @@ import Footer from "./Footer";
 import Acasa from "./Acasa";
 import Portofoliu from "./Portofoliu";
 import { Component } from "react";
-import { AppComponentsNames } from "./Types";
+import { AppComponentsNames } from "../Types";
 import RevizieAC from "./RevizieAC";
 import RevizieCT from "./ReviziaCT";
 import InlocuireCT from "./InlocuireCT";

@@ -7,7 +7,7 @@ import trustLogo from "./img/parteneri/trust.png";
 import total_gaz from "./img/parteneri/total-gaz.png";
 import motanLogo from "./img/parteneri/motan.png";
 import solaris_design_iasi_2 from "./img/portofoliu/all season/solaris_design_iasi_2.jpg";
-import { AppComponentsNames } from "./Types";
+import { AppComponentsNames } from "../Types";
 
 export type AcasaProps = Readonly<{
   onPageSwitched: (componentName: AppComponentsNames, scroolId: string) => void;
