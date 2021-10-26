@@ -19,11 +19,11 @@ function Header(props: HeaderProps) {
                 </div>
                 <div className="main-menu">
                     <nav>
-                        <a href="#" onClick={()=> props.onPageSwitched(AppComponentsNames.AcasaPage)}>Acasa</a>
-                        <a href="#" onClick={()=> props.onPageSwitched(AppComponentsNames.RevizieCT)}>Revizie CT</a>
-                        <a href="#" onClick={()=> props.onPageSwitched(AppComponentsNames.RevizieAC)}>Revizie AC</a>
-                        <a href="#" onClick={()=> props.onPageSwitched(AppComponentsNames.InlocuireCT)}>Inlocuire centrala</a>
-                        <a href="#" onClick={()=> props.onPageSwitched(AppComponentsNames.PortofoliuPage)}>Portofoliu</a>
+                        <a href="" onClick={()=> props.onPageSwitched(AppComponentsNames.Acasa)}>Acasa</a>
+                        <a href="" onClick={()=> props.onPageSwitched(AppComponentsNames.RevizieCT)}>Revizie CT</a>
+                        <a href="" onClick={()=> props.onPageSwitched(AppComponentsNames.RevizieAC)}>Revizie AC</a>
+                        <a href="" onClick={()=> props.onPageSwitched(AppComponentsNames.InlocuireCT)}>Inlocuire centrala</a>
+                        <a href="" onClick={()=> props.onPageSwitched(AppComponentsNames.Portofoliu)}>Portofoliu</a>
                     </nav>
                 </div>
             </div>

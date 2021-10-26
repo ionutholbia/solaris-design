@@ -7,44 +7,69 @@ import { AppComponentsNames } from "./Types";
 import RevizieAC from "./RevizieAC";
 import RevizieCT from "./ReviziaCT";
 import InlocuireCT from "./InlocuireCT";
+import {
+  withRouter,
+  RouteComponentProps,
+  Switch,
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+} from "react-router-dom";
 
-interface IAppProps {}
+interface IAppProps extends RouteComponentProps {}
 
-interface IAppState {
-  currentComponentName: AppComponentsNames;
-}
+interface IAppState {}
 class App extends Component<IAppProps, IAppState> {
-  private readonly components = {
-    Acasa: <Acasa />,
-    Portofoliu: <Portofoliu />,
-    RevizieAC: <RevizieAC />,
-    RevizieCT: <RevizieCT />,
-    InlocuireCT: <InlocuireCT />,
-  };
-
   constructor(props: IAppProps) {
     super(props);
 
     this.state = {
-      currentComponentName: AppComponentsNames.AcasaPage,
+      currentComponentName: AppComponentsNames.Acasa,
     };
 
     this.onPageSwitched = this.onPageSwitched.bind(this);
   }
 
   onPageSwitched(newComponentName: AppComponentsNames) {
-    this.setState({ currentComponentName: newComponentName });
+    this.props.history.push(`/${newComponentName}`);
   }
 
   render() {
     return (
-      <body>
-        <Header onPageSwitched={this.onPageSwitched} />
-        {this.components[this.state.currentComponentName]}
-        <Footer />
-      </body>
+      <Router>
+        <body>
+          <Header onPageSwitched={this.onPageSwitched} />
+          <Switch>
+            <Route
+              exact
+              path="/"
+              render={() => {
+                return <Redirect to={`/${AppComponentsNames.Acasa}`} />;
+              }}
+            />
+            <Route path={`/${AppComponentsNames.Acasa}`} component={Acasa} />
+            <Route
+              path={`/${AppComponentsNames.RevizieCT}`}
+              component={RevizieCT}
+            />
+            <Route
+              path={`/${AppComponentsNames.RevizieAC}`}
+              component={RevizieAC}
+            />
+            <Route
+              path={`/${AppComponentsNames.InlocuireCT}`}
+              component={InlocuireCT}
+            />
+            <Route
+              path={`/${AppComponentsNames.Portofoliu}`}
+              component={Portofoliu}
+            />
+          </Switch>
+          <Footer />
+        </body>
+      </Router>
     );
   }
 }
 
-export default App;
+export default withRouter(App);

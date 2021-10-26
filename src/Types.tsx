@@ -1,6 +1,6 @@
 export enum AppComponentsNames {
-  AcasaPage = "Acasa",
-  PortofoliuPage = "Portofoliu",
+  Acasa = "Acasa",
+  Portofoliu = "Portofoliu",
   RevizieAC = "RevizieAC",
   RevizieCT = "RevizieCT",
   InlocuireCT = "InlocuireCT",

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./Main.css";
 import mk_plus24_1 from "./img/centrale/pachet_1/mk_plus24_1.png";
 import mk_dens25 from "./img/centrale/pachet_2/mk_dens25.png";
@@ -6,8 +7,11 @@ import trustLogo from "./img/parteneri/trust.png";
 import total_gaz from "./img/parteneri/total-gaz.png";
 import motanLogo from "./img/parteneri/motan.png";
 import solaris_design_iasi_2 from "./img/portofoliu/all season/solaris_design_iasi_2.jpg";
+import { AppComponentsNames } from "./Types";
 
-function Acasa() {
+export type AcasaProps = Readonly<{ onPageSwitched: (componentName: AppComponentsNames, scroolId: string) => void }>
+
+function Acasa(props: AcasaProps) {
   return (
     <section className="section hero">
       <div className="container hero__content">
@@ -43,7 +47,7 @@ function Acasa() {
               </ul>
               <p>
                 <a
-                  href="revizie_centrala_termica.php"
+                  href="#" onClick={()=> props.onPageSwitched(AppComponentsNames.RevizieCT, "")}
                   className="btn-secondary"
                 >
                   {" "}
@@ -63,7 +67,7 @@ function Acasa() {
                 <li>-- verificare și completare nivel freon</li>
               </ul>
               <p>
-                <a href="revizie_aer_conditionat.php" className="btn-secondary">
+                <a href="#" onClick={()=> props.onPageSwitched(AppComponentsNames.RevizieCT, "")} className="btn-secondary">
                   {" "}
                   Vezi detalii
                 </a>
@@ -81,7 +85,7 @@ function Acasa() {
               </h2>
               <div className="modele">
                 <div className="modele__item">
-                  <a href="inlocuire_centrala.php#pachet-basic">
+                  <a href="#" onClick={()=> props.onPageSwitched(AppComponentsNames.RevizieCT, "pachet-basic")}>
                     <p>
                       01.{" "}
                       <img

@@ -62,6 +62,7 @@ function Footer() {
                   <a
                     href="https://www.facebook.com/Solaris-Design-Iasi-602610773087194/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <i>
                       <BsFacebook />
