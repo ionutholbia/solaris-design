@@ -2,6 +2,10 @@ import "./Main.css";
 import mk_plus24 from "./img/centrale/pachet_1/mk_plus24.png";
 import mk_dens25_2 from "./img/centrale/pachet_2/mk_dens25_2.png";
 import ariston_alteas_one from "./img/centrale/pachet_3/ariston_alteas_one.png";
+import {
+  BsTelephoneFill,
+  BsCartFill
+} from "react-icons/bs";
 
 function InlocuireCT() {
   return (
@@ -36,7 +40,7 @@ function InlocuireCT() {
             </div>
             <a href="tel:0749088823" className="btn-primary btn-primary--full">
               <h4>
-                <i className="fas fa-phone"></i> Comandă telefonic
+                <i><BsTelephoneFill /></i> Comandă telefonic
               </h4>
             </a>
             <a
@@ -47,7 +51,7 @@ function InlocuireCT() {
               data-ol-has-click-handler=""
             >
               <h4>
-                <i className="fas fa-shopping-cart"></i> Comanda email
+                <i><BsCartFill /></i> Comanda email
               </h4>
             </a>
             <div className="js-message-1"></div>
@@ -128,7 +132,7 @@ function InlocuireCT() {
             </div>
             <a href="tel:0749088823" className="btn-primary btn-primary--full">
               <h4>
-                <i className="fas fa-phone"></i> Comandă telefonic
+                <i><BsTelephoneFill /></i> Comandă telefonic
               </h4>
             </a>
             <a
@@ -139,7 +143,7 @@ function InlocuireCT() {
               data-ol-has-click-handler=""
             >
               <h4>
-                <i className="fas fa-shopping-cart"></i> Comanda email
+                <i><BsCartFill /></i> Comanda email
               </h4>
             </a>
             <div className="js-message-2"></div>
@@ -205,7 +209,7 @@ function InlocuireCT() {
             </div>
             <a href="tel:0749088823" className="btn-primary btn-primary--full">
               <h4>
-                <i className="fas fa-phone"></i> Comandă telefonic
+                <i><BsTelephoneFill /></i> Comandă telefonic
               </h4>
             </a>
             <a
@@ -216,7 +220,7 @@ function InlocuireCT() {
               data-ol-has-click-handler=""
             >
               <h4>
-                <i className="fas fa-shopping-cart"></i> Comanda email
+                <i><BsCartFill /></i> Comanda email
               </h4>
             </a>
             <div className="js-message-3"></div>

@@ -1,5 +1,9 @@
 import "./Main.css";
 import pachet__aerconditionat from "./img/icons/pachet__aerconditionat.svg";
+import {
+  BsTelephoneFill,
+  BsCartFill
+} from "react-icons/bs";
 
 function RevizieAC() {
   return (
@@ -22,7 +26,7 @@ function RevizieAC() {
             <hr />
             <a href="tel:0749088823" className="btn-primary btn-primary--full">
               <h4>
-                <i className="fas fa-phone"></i> Comandă telefonic
+                <i><BsTelephoneFill /></i> Comandă telefonic
               </h4>
             </a>
             <a
@@ -34,7 +38,7 @@ function RevizieAC() {
               data-ol-has-click-handler=""
             >
               <h4>
-                <i className="fas fa-shopping-cart"></i> Comanda acum
+                <i><BsCartFill /></i> Comanda email
               </h4>
             </a>
           </div>

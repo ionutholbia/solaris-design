@@ -10,7 +10,7 @@ function Header(props: HeaderProps) {
         <header className="header">
             <div className="container">
                 <div className="logo">
-                    <a href="index.php"><img src={logo_solarisdesign} alt="Solaris Design" /></a>
+                    <a href="" onClick={()=> props.onPageSwitched(AppComponentsNames.Acasa)}><img src={logo_solarisdesign} alt="Solaris Design" /></a>
                 </div>
                 <div className="main-menu-trigger">
                     <span></span>

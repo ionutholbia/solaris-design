@@ -9,7 +9,9 @@ import motanLogo from "./img/parteneri/motan.png";
 import solaris_design_iasi_2 from "./img/portofoliu/all season/solaris_design_iasi_2.jpg";
 import { AppComponentsNames } from "./Types";
 
-export type AcasaProps = Readonly<{ onPageSwitched: (componentName: AppComponentsNames, scroolId: string) => void }>
+export type AcasaProps = Readonly<{
+  onPageSwitched: (componentName: AppComponentsNames, scroolId: string) => void;
+}>;
 
 function Acasa(props: AcasaProps) {
   return (
@@ -47,7 +49,10 @@ function Acasa(props: AcasaProps) {
               </ul>
               <p>
                 <a
-                  href="#" onClick={()=> props.onPageSwitched(AppComponentsNames.RevizieCT, "")}
+                  href=""
+                  onClick={() =>
+                    props.onPageSwitched(AppComponentsNames.RevizieCT, "")
+                  }
                   className="btn-secondary"
                 >
                   {" "}
@@ -67,7 +72,13 @@ function Acasa(props: AcasaProps) {
                 <li>-- verificare și completare nivel freon</li>
               </ul>
               <p>
-                <a href="#" onClick={()=> props.onPageSwitched(AppComponentsNames.RevizieCT, "")} className="btn-secondary">
+                <a
+                  href=""
+                  onClick={() =>
+                    props.onPageSwitched(AppComponentsNames.RevizieAC, "")
+                  }
+                  className="btn-secondary"
+                >
                   {" "}
                   Vezi detalii
                 </a>
@@ -85,7 +96,15 @@ function Acasa(props: AcasaProps) {
               </h2>
               <div className="modele">
                 <div className="modele__item">
-                  <a href="#" onClick={()=> props.onPageSwitched(AppComponentsNames.RevizieCT, "pachet-basic")}>
+                  <a
+                    href=""
+                    onClick={() =>
+                      props.onPageSwitched(
+                        AppComponentsNames.InlocuireCT,
+                        "pachet-basic"
+                      )
+                    }
+                  >
                     <p>
                       01.{" "}
                       <img
@@ -98,7 +117,15 @@ function Acasa(props: AcasaProps) {
                   </a>
                 </div>
                 <div className="modele__item">
-                  <a href="inlocuire_centrala.php#pachet-medium">
+                  <a
+                    href=""
+                    onClick={() =>
+                      props.onPageSwitched(
+                        AppComponentsNames.InlocuireCT,
+                        "pachet-medium"
+                      )
+                    }
+                  >
                     <p>
                       02.{" "}
                       <img
@@ -111,7 +138,15 @@ function Acasa(props: AcasaProps) {
                   </a>
                 </div>
                 <div className="modele__item">
-                  <a href="inlocuire_centrala.php#pachet-premium">
+                  <a
+                    href=""
+                    onClick={() =>
+                      props.onPageSwitched(
+                        AppComponentsNames.InlocuireCT,
+                        "pachet-premium"
+                      )
+                    }
+                  >
                     <p>
                       03.{" "}
                       <img
@@ -131,7 +166,13 @@ function Acasa(props: AcasaProps) {
                 </li>
               </ul>
               <p>
-                <a href="inlocuire_centrala.php" className="btn-secondary">
+                <a
+                  href=""
+                  onClick={() =>
+                    props.onPageSwitched(AppComponentsNames.InlocuireCT, "")
+                  }
+                  className="btn-secondary"
+                >
                   {" "}
                   Vezi detalii
                 </a>
@@ -161,14 +202,25 @@ function Acasa(props: AcasaProps) {
               alimentare cu apă şi gaze.
             </p>
             <p>
-              <a href="portofoliu.php" className="btn-secondary">
+              <a
+                href=""
+                onClick={() =>
+                  props.onPageSwitched(AppComponentsNames.Portofoliu, "")
+                }
+                className="btn-secondary"
+              >
                 Vezi portofoliu lucrari
               </a>
             </p>
           </div>
           <div className="col-md-6">
             <p>
-              <a href="portofoliu.php">
+              <a
+                href=""
+                onClick={() =>
+                  props.onPageSwitched(AppComponentsNames.Portofoliu, "")
+                }
+              >
                 <img
                   src={solaris_design_iasi_2}
                   alt="Solaris Design Iasi - Portofoliu"

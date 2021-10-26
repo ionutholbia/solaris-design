@@ -41,10 +41,12 @@ function Footer() {
               </div>
               <div className="footer__contact-items">
                 <p>
-                  <i>
-                    <BsTelephoneFill />
-                  </i>{" "}
-                  <strong>0232 814 832</strong>
+                  <a href="tel:0232814832">
+                    <i>
+                      <BsTelephoneFill />
+                    </i>{" "}
+                    <strong>0232 814 832</strong>
+                  </a>
                 </p>
               </div>
               <div className="footer__contact-items">

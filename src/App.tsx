@@ -30,7 +30,7 @@ class App extends Component<IAppProps, IAppState> {
     this.onPageSwitched = this.onPageSwitched.bind(this);
   }
 
-  onPageSwitched(newComponentName: AppComponentsNames) {
+  onPageSwitched(newComponentName: AppComponentsNames, scroolId = "") {
     this.props.history.push(`/${newComponentName}`);
   }
 
@@ -47,7 +47,10 @@ class App extends Component<IAppProps, IAppState> {
                 return <Redirect to={`/${AppComponentsNames.Acasa}`} />;
               }}
             />
-            <Route path={`/${AppComponentsNames.Acasa}`} component={Acasa} />
+            <Route path={`/${AppComponentsNames.Acasa}`}>
+              {" "}
+              <Acasa onPageSwitched={this.onPageSwitched} />{" "}
+            </Route>
             <Route
               path={`/${AppComponentsNames.RevizieCT}`}
               component={RevizieCT}
