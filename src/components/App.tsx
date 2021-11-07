@@ -15,6 +15,7 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
+import Aspiratoare from "./Aspiratoare";
 
 interface IAppProps extends RouteComponentProps {}
 
@@ -44,13 +45,17 @@ class App extends Component<IAppProps, IAppState> {
               exact
               path="/"
               render={() => {
-                return <Redirect to={`/${AppComponentsNames.Acasa}`} />;
+                return <Redirect to={`/${AppComponentsNames.Aspiratoare}`} />;
               }}
             />
             <Route path={`/${AppComponentsNames.Acasa}`}>
               {" "}
               <Acasa onPageSwitched={this.onPageSwitched} />{" "}
             </Route>
+            <Route
+              path={`/${AppComponentsNames.Aspiratoare}`}
+              component={Aspiratoare}
+            />
             <Route
               path={`/${AppComponentsNames.RevizieCT}`}
               component={RevizieCT}
