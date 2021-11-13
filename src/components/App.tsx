@@ -18,16 +18,11 @@ import {
 import Aspiratoare from "./Aspiratoare";
 
 interface IAppProps extends RouteComponentProps {}
-
 interface IAppState {}
+
 class App extends Component<IAppProps, IAppState> {
   constructor(props: IAppProps) {
     super(props);
-
-    this.state = {
-      currentComponentName: AppComponentsNames.Acasa,
-    };
-
     this.onPageSwitched = this.onPageSwitched.bind(this);
   }
 
